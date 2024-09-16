@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banned</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Black background */
+            color: #0f0; /* Green text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .banned-container {
+            text-align: center;
+            background-color: #111; /* Slightly lighter black background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Green shadow */
+            max-width: 500px;
+            width: 100%; /* Full width up to max-width */
+        }
+        h1 {
+            color: #0f0; /* Green color for heading */
+            margin-bottom: 20px;
+        }
+        p {
+            color: #0f0; /* Green color for paragraph */
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #0f0; /* Green color for links */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="banned-container">
+        <h1>You Are Banned</h1>
+        <p>Your account has been banned. You can regain access by redeeming a code.</p>
+        <li><a href="https://XxScriptsxX.mysellix.io/product/unblocked-premium" target="_blank"><button>Buy code here</button></a></li>
+        <li><a href="{{ url_for('redeem_unban') }}"><button>Redeem Code Here</button></a></li>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
